@@ -37,6 +37,28 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gBoxSystemComponents = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtOS = new System.Windows.Forms.TextBox();
+            this.txtWebCam = new System.Windows.Forms.TextBox();
+            this.txtGPUType = new System.Windows.Forms.TextBox();
+            this.txtHDD = new System.Windows.Forms.TextBox();
+            this.txtCPUSpeed = new System.Windows.Forms.TextBox();
+            this.txtCPUNumber = new System.Windows.Forms.TextBox();
+            this.txtCPUType = new System.Windows.Forms.TextBox();
+            this.txtCPUBrand = new System.Windows.Forms.TextBox();
+            this.txtMemory = new System.Windows.Forms.TextBox();
+            this.txtLCDSize = new System.Windows.Forms.TextBox();
+            this.lblOS = new System.Windows.Forms.Label();
+            this.lblWebCam = new System.Windows.Forms.Label();
+            this.lblGPUType = new System.Windows.Forms.Label();
+            this.lblHDD = new System.Windows.Forms.Label();
+            this.lblCPUSpeed = new System.Windows.Forms.Label();
+            this.lblCPUNumber = new System.Windows.Forms.Label();
+            this.lblCPUType = new System.Windows.Forms.Label();
+            this.lblCPUBrand = new System.Windows.Forms.Label();
+            this.lblMemory = new System.Windows.Forms.Label();
+            this.lblLCDSize = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.lblManufacturer = new System.Windows.Forms.Label();
             this.lblModel = new System.Windows.Forms.Label();
@@ -45,37 +67,18 @@
             this.lblCondition = new System.Windows.Forms.Label();
             this.lblPlatform = new System.Windows.Forms.Label();
             this.txtCondition = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblLCDSize = new System.Windows.Forms.Label();
-            this.lblMemory = new System.Windows.Forms.Label();
-            this.lblCPUBrand = new System.Windows.Forms.Label();
-            this.lblCPUSpeed = new System.Windows.Forms.Label();
-            this.lblCPUNumber = new System.Windows.Forms.Label();
-            this.lblCPUType = new System.Windows.Forms.Label();
-            this.lblOS = new System.Windows.Forms.Label();
-            this.lblWebCam = new System.Windows.Forms.Label();
-            this.lblGPUType = new System.Windows.Forms.Label();
-            this.lblHDD = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtLCDSize = new System.Windows.Forms.TextBox();
-            this.txtMemory = new System.Windows.Forms.TextBox();
-            this.txtCPUBrand = new System.Windows.Forms.TextBox();
-            this.txtCPUType = new System.Windows.Forms.TextBox();
-            this.txtCPUNumber = new System.Windows.Forms.TextBox();
-            this.txtCPUSpeed = new System.Windows.Forms.TextBox();
-            this.txtHDD = new System.Windows.Forms.TextBox();
-            this.txtGPUType = new System.Windows.Forms.TextBox();
-            this.txtWebCam = new System.Windows.Forms.TextBox();
-            this.txtOS = new System.Windows.Forms.TextBox();
             this.pBoxComputer = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblSalesTax = new System.Windows.Forms.Label();
             this.txtSalesTax = new System.Windows.Forms.TextBox();
             this.lblPrice = new System.Windows.Forms.Label();
             this.txtPrice = new System.Windows.Forms.TextBox();
-            this.lblTotal = new System.Windows.Forms.Label();
-            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.btnFinish = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.gBoxSystemComponents.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -91,7 +94,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1119, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1106, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -141,7 +144,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             // 
             // gBoxSystemComponents
@@ -175,145 +178,133 @@
             this.gBoxSystemComponents.TabStop = false;
             this.gBoxSystemComponents.Text = "System Components";
             // 
-            // txtModel
+            // panel2
             // 
-            this.txtModel.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModel.Location = new System.Drawing.Point(414, 76);
-            this.txtModel.Name = "txtModel";
-            this.txtModel.Size = new System.Drawing.Size(141, 30);
-            this.txtModel.TabIndex = 26;
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.txtOS);
+            this.panel2.Controls.Add(this.txtWebCam);
+            this.panel2.Controls.Add(this.txtGPUType);
+            this.panel2.Controls.Add(this.txtHDD);
+            this.panel2.Controls.Add(this.txtCPUSpeed);
+            this.panel2.Controls.Add(this.txtCPUNumber);
+            this.panel2.Controls.Add(this.txtCPUType);
+            this.panel2.Controls.Add(this.txtCPUBrand);
+            this.panel2.Controls.Add(this.txtMemory);
+            this.panel2.Controls.Add(this.txtLCDSize);
+            this.panel2.Location = new System.Drawing.Point(147, 141);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(419, 372);
+            this.panel2.TabIndex = 39;
             // 
-            // lblManufacturer
+            // txtOS
             // 
-            this.lblManufacturer.AutoSize = true;
-            this.lblManufacturer.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManufacturer.Location = new System.Drawing.Point(6, 81);
-            this.lblManufacturer.Name = "lblManufacturer";
-            this.lblManufacturer.Size = new System.Drawing.Size(134, 22);
-            this.lblManufacturer.TabIndex = 23;
-            this.lblManufacturer.Text = "Manufacturer";
+            this.txtOS.BackColor = System.Drawing.Color.White;
+            this.txtOS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOS.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOS.Location = new System.Drawing.Point(3, 341);
+            this.txtOS.Name = "txtOS";
+            this.txtOS.ReadOnly = true;
+            this.txtOS.Size = new System.Drawing.Size(405, 23);
+            this.txtOS.TabIndex = 49;
             // 
-            // lblModel
+            // txtWebCam
             // 
-            this.lblModel.AutoSize = true;
-            this.lblModel.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModel.Location = new System.Drawing.Point(341, 79);
-            this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(67, 22);
-            this.lblModel.TabIndex = 25;
-            this.lblModel.Text = "Model";
+            this.txtWebCam.BackColor = System.Drawing.Color.White;
+            this.txtWebCam.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtWebCam.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWebCam.Location = new System.Drawing.Point(3, 304);
+            this.txtWebCam.Name = "txtWebCam";
+            this.txtWebCam.ReadOnly = true;
+            this.txtWebCam.Size = new System.Drawing.Size(405, 23);
+            this.txtWebCam.TabIndex = 48;
             // 
-            // txtManufacturer
+            // txtGPUType
             // 
-            this.txtManufacturer.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtManufacturer.Location = new System.Drawing.Point(146, 76);
-            this.txtManufacturer.Name = "txtManufacturer";
-            this.txtManufacturer.Size = new System.Drawing.Size(140, 30);
-            this.txtManufacturer.TabIndex = 24;
+            this.txtGPUType.BackColor = System.Drawing.Color.White;
+            this.txtGPUType.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtGPUType.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGPUType.Location = new System.Drawing.Point(3, 267);
+            this.txtGPUType.Name = "txtGPUType";
+            this.txtGPUType.ReadOnly = true;
+            this.txtGPUType.Size = new System.Drawing.Size(405, 23);
+            this.txtGPUType.TabIndex = 47;
             // 
-            // txtPlatform
+            // txtHDD
             // 
-            this.txtPlatform.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPlatform.Location = new System.Drawing.Point(414, 41);
-            this.txtPlatform.Name = "txtPlatform";
-            this.txtPlatform.Size = new System.Drawing.Size(141, 30);
-            this.txtPlatform.TabIndex = 22;
+            this.txtHDD.BackColor = System.Drawing.Color.White;
+            this.txtHDD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHDD.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHDD.Location = new System.Drawing.Point(3, 231);
+            this.txtHDD.Name = "txtHDD";
+            this.txtHDD.ReadOnly = true;
+            this.txtHDD.Size = new System.Drawing.Size(405, 23);
+            this.txtHDD.TabIndex = 46;
             // 
-            // lblCondition
+            // txtCPUSpeed
             // 
-            this.lblCondition.AutoSize = true;
-            this.lblCondition.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCondition.Location = new System.Drawing.Point(37, 44);
-            this.lblCondition.Name = "lblCondition";
-            this.lblCondition.Size = new System.Drawing.Size(103, 22);
-            this.lblCondition.TabIndex = 19;
-            this.lblCondition.Text = "Condition";
+            this.txtCPUSpeed.BackColor = System.Drawing.Color.White;
+            this.txtCPUSpeed.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPUSpeed.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPUSpeed.Location = new System.Drawing.Point(3, 194);
+            this.txtCPUSpeed.Name = "txtCPUSpeed";
+            this.txtCPUSpeed.ReadOnly = true;
+            this.txtCPUSpeed.Size = new System.Drawing.Size(405, 23);
+            this.txtCPUSpeed.TabIndex = 45;
             // 
-            // lblPlatform
+            // txtCPUNumber
             // 
-            this.lblPlatform.AutoSize = true;
-            this.lblPlatform.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlatform.Location = new System.Drawing.Point(319, 44);
-            this.lblPlatform.Name = "lblPlatform";
-            this.lblPlatform.Size = new System.Drawing.Size(89, 22);
-            this.lblPlatform.TabIndex = 21;
-            this.lblPlatform.Text = "Platform";
+            this.txtCPUNumber.BackColor = System.Drawing.Color.White;
+            this.txtCPUNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPUNumber.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPUNumber.Location = new System.Drawing.Point(3, 158);
+            this.txtCPUNumber.Name = "txtCPUNumber";
+            this.txtCPUNumber.ReadOnly = true;
+            this.txtCPUNumber.Size = new System.Drawing.Size(405, 23);
+            this.txtCPUNumber.TabIndex = 44;
             // 
-            // txtCondition
+            // txtCPUType
             // 
-            this.txtCondition.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCondition.Location = new System.Drawing.Point(146, 41);
-            this.txtCondition.Name = "txtCondition";
-            this.txtCondition.Size = new System.Drawing.Size(140, 30);
-            this.txtCondition.TabIndex = 20;
+            this.txtCPUType.BackColor = System.Drawing.Color.White;
+            this.txtCPUType.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPUType.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPUType.Location = new System.Drawing.Point(3, 121);
+            this.txtCPUType.Name = "txtCPUType";
+            this.txtCPUType.ReadOnly = true;
+            this.txtCPUType.Size = new System.Drawing.Size(405, 23);
+            this.txtCPUType.TabIndex = 43;
             // 
-            // panel1
+            // txtCPUBrand
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(6, 130);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(560, 3);
-            this.panel1.TabIndex = 27;
+            this.txtCPUBrand.BackColor = System.Drawing.Color.White;
+            this.txtCPUBrand.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPUBrand.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPUBrand.Location = new System.Drawing.Point(3, 84);
+            this.txtCPUBrand.Name = "txtCPUBrand";
+            this.txtCPUBrand.ReadOnly = true;
+            this.txtCPUBrand.Size = new System.Drawing.Size(405, 23);
+            this.txtCPUBrand.TabIndex = 42;
             // 
-            // lblLCDSize
+            // txtMemory
             // 
-            this.lblLCDSize.AutoSize = true;
-            this.lblLCDSize.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLCDSize.Location = new System.Drawing.Point(6, 152);
-            this.lblLCDSize.Name = "lblLCDSize";
-            this.lblLCDSize.Size = new System.Drawing.Size(90, 22);
-            this.lblLCDSize.TabIndex = 28;
-            this.lblLCDSize.Text = "LCD Size";
+            this.txtMemory.BackColor = System.Drawing.Color.White;
+            this.txtMemory.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMemory.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMemory.Location = new System.Drawing.Point(3, 48);
+            this.txtMemory.Name = "txtMemory";
+            this.txtMemory.ReadOnly = true;
+            this.txtMemory.Size = new System.Drawing.Size(405, 23);
+            this.txtMemory.TabIndex = 41;
             // 
-            // lblMemory
+            // txtLCDSize
             // 
-            this.lblMemory.AutoSize = true;
-            this.lblMemory.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMemory.Location = new System.Drawing.Point(6, 189);
-            this.lblMemory.Name = "lblMemory";
-            this.lblMemory.Size = new System.Drawing.Size(86, 22);
-            this.lblMemory.TabIndex = 29;
-            this.lblMemory.Text = "Memory";
-            // 
-            // lblCPUBrand
-            // 
-            this.lblCPUBrand.AutoSize = true;
-            this.lblCPUBrand.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPUBrand.Location = new System.Drawing.Point(6, 225);
-            this.lblCPUBrand.Name = "lblCPUBrand";
-            this.lblCPUBrand.Size = new System.Drawing.Size(106, 22);
-            this.lblCPUBrand.TabIndex = 30;
-            this.lblCPUBrand.Text = "CPU Brand";
-            // 
-            // lblCPUSpeed
-            // 
-            this.lblCPUSpeed.AutoSize = true;
-            this.lblCPUSpeed.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPUSpeed.Location = new System.Drawing.Point(6, 335);
-            this.lblCPUSpeed.Name = "lblCPUSpeed";
-            this.lblCPUSpeed.Size = new System.Drawing.Size(107, 22);
-            this.lblCPUSpeed.TabIndex = 33;
-            this.lblCPUSpeed.Text = "CPU Speed";
-            // 
-            // lblCPUNumber
-            // 
-            this.lblCPUNumber.AutoSize = true;
-            this.lblCPUNumber.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPUNumber.Location = new System.Drawing.Point(6, 299);
-            this.lblCPUNumber.Name = "lblCPUNumber";
-            this.lblCPUNumber.Size = new System.Drawing.Size(128, 22);
-            this.lblCPUNumber.TabIndex = 32;
-            this.lblCPUNumber.Text = "CPU Number";
-            // 
-            // lblCPUType
-            // 
-            this.lblCPUType.AutoSize = true;
-            this.lblCPUType.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPUType.Location = new System.Drawing.Point(6, 262);
-            this.lblCPUType.Name = "lblCPUType";
-            this.lblCPUType.Size = new System.Drawing.Size(92, 22);
-            this.lblCPUType.TabIndex = 31;
-            this.lblCPUType.Text = "CPUType";
+            this.txtLCDSize.BackColor = System.Drawing.Color.White;
+            this.txtLCDSize.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtLCDSize.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLCDSize.Location = new System.Drawing.Point(3, 11);
+            this.txtLCDSize.Name = "txtLCDSize";
+            this.txtLCDSize.ReadOnly = true;
+            this.txtLCDSize.Size = new System.Drawing.Size(405, 23);
+            this.txtLCDSize.TabIndex = 40;
             // 
             // lblOS
             // 
@@ -355,112 +346,153 @@
             this.lblHDD.TabIndex = 34;
             this.lblHDD.Text = "HDD";
             // 
-            // panel2
+            // lblCPUSpeed
             // 
-            this.panel2.Controls.Add(this.txtOS);
-            this.panel2.Controls.Add(this.txtWebCam);
-            this.panel2.Controls.Add(this.txtGPUType);
-            this.panel2.Controls.Add(this.txtHDD);
-            this.panel2.Controls.Add(this.txtCPUSpeed);
-            this.panel2.Controls.Add(this.txtCPUNumber);
-            this.panel2.Controls.Add(this.txtCPUType);
-            this.panel2.Controls.Add(this.txtCPUBrand);
-            this.panel2.Controls.Add(this.txtMemory);
-            this.panel2.Controls.Add(this.txtLCDSize);
-            this.panel2.Location = new System.Drawing.Point(147, 141);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(419, 372);
-            this.panel2.TabIndex = 39;
+            this.lblCPUSpeed.AutoSize = true;
+            this.lblCPUSpeed.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPUSpeed.Location = new System.Drawing.Point(6, 335);
+            this.lblCPUSpeed.Name = "lblCPUSpeed";
+            this.lblCPUSpeed.Size = new System.Drawing.Size(107, 22);
+            this.lblCPUSpeed.TabIndex = 33;
+            this.lblCPUSpeed.Text = "CPU Speed";
             // 
-            // txtLCDSize
+            // lblCPUNumber
             // 
-            this.txtLCDSize.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLCDSize.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLCDSize.Location = new System.Drawing.Point(3, 11);
-            this.txtLCDSize.Name = "txtLCDSize";
-            this.txtLCDSize.Size = new System.Drawing.Size(405, 23);
-            this.txtLCDSize.TabIndex = 40;
+            this.lblCPUNumber.AutoSize = true;
+            this.lblCPUNumber.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPUNumber.Location = new System.Drawing.Point(6, 299);
+            this.lblCPUNumber.Name = "lblCPUNumber";
+            this.lblCPUNumber.Size = new System.Drawing.Size(128, 22);
+            this.lblCPUNumber.TabIndex = 32;
+            this.lblCPUNumber.Text = "CPU Number";
             // 
-            // txtMemory
+            // lblCPUType
             // 
-            this.txtMemory.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMemory.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMemory.Location = new System.Drawing.Point(3, 48);
-            this.txtMemory.Name = "txtMemory";
-            this.txtMemory.Size = new System.Drawing.Size(405, 23);
-            this.txtMemory.TabIndex = 41;
+            this.lblCPUType.AutoSize = true;
+            this.lblCPUType.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPUType.Location = new System.Drawing.Point(6, 262);
+            this.lblCPUType.Name = "lblCPUType";
+            this.lblCPUType.Size = new System.Drawing.Size(92, 22);
+            this.lblCPUType.TabIndex = 31;
+            this.lblCPUType.Text = "CPUType";
             // 
-            // txtCPUBrand
+            // lblCPUBrand
             // 
-            this.txtCPUBrand.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPUBrand.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPUBrand.Location = new System.Drawing.Point(3, 84);
-            this.txtCPUBrand.Name = "txtCPUBrand";
-            this.txtCPUBrand.Size = new System.Drawing.Size(405, 23);
-            this.txtCPUBrand.TabIndex = 42;
+            this.lblCPUBrand.AutoSize = true;
+            this.lblCPUBrand.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPUBrand.Location = new System.Drawing.Point(6, 225);
+            this.lblCPUBrand.Name = "lblCPUBrand";
+            this.lblCPUBrand.Size = new System.Drawing.Size(106, 22);
+            this.lblCPUBrand.TabIndex = 30;
+            this.lblCPUBrand.Text = "CPU Brand";
             // 
-            // txtCPUType
+            // lblMemory
             // 
-            this.txtCPUType.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPUType.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPUType.Location = new System.Drawing.Point(3, 121);
-            this.txtCPUType.Name = "txtCPUType";
-            this.txtCPUType.Size = new System.Drawing.Size(405, 23);
-            this.txtCPUType.TabIndex = 43;
+            this.lblMemory.AutoSize = true;
+            this.lblMemory.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMemory.Location = new System.Drawing.Point(6, 189);
+            this.lblMemory.Name = "lblMemory";
+            this.lblMemory.Size = new System.Drawing.Size(86, 22);
+            this.lblMemory.TabIndex = 29;
+            this.lblMemory.Text = "Memory";
             // 
-            // txtCPUNumber
+            // lblLCDSize
             // 
-            this.txtCPUNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPUNumber.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPUNumber.Location = new System.Drawing.Point(3, 158);
-            this.txtCPUNumber.Name = "txtCPUNumber";
-            this.txtCPUNumber.Size = new System.Drawing.Size(405, 23);
-            this.txtCPUNumber.TabIndex = 44;
+            this.lblLCDSize.AutoSize = true;
+            this.lblLCDSize.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLCDSize.Location = new System.Drawing.Point(6, 152);
+            this.lblLCDSize.Name = "lblLCDSize";
+            this.lblLCDSize.Size = new System.Drawing.Size(90, 22);
+            this.lblLCDSize.TabIndex = 28;
+            this.lblLCDSize.Text = "LCD Size";
             // 
-            // txtCPUSpeed
+            // panel1
             // 
-            this.txtCPUSpeed.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPUSpeed.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPUSpeed.Location = new System.Drawing.Point(3, 194);
-            this.txtCPUSpeed.Name = "txtCPUSpeed";
-            this.txtCPUSpeed.Size = new System.Drawing.Size(405, 23);
-            this.txtCPUSpeed.TabIndex = 45;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(6, 130);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(560, 3);
+            this.panel1.TabIndex = 27;
             // 
-            // txtHDD
+            // txtModel
             // 
-            this.txtHDD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtHDD.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHDD.Location = new System.Drawing.Point(3, 231);
-            this.txtHDD.Name = "txtHDD";
-            this.txtHDD.Size = new System.Drawing.Size(405, 23);
-            this.txtHDD.TabIndex = 46;
+            this.txtModel.BackColor = System.Drawing.Color.White;
+            this.txtModel.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtModel.Location = new System.Drawing.Point(414, 76);
+            this.txtModel.Name = "txtModel";
+            this.txtModel.ReadOnly = true;
+            this.txtModel.Size = new System.Drawing.Size(141, 30);
+            this.txtModel.TabIndex = 26;
             // 
-            // txtGPUType
+            // lblManufacturer
             // 
-            this.txtGPUType.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtGPUType.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGPUType.Location = new System.Drawing.Point(3, 267);
-            this.txtGPUType.Name = "txtGPUType";
-            this.txtGPUType.Size = new System.Drawing.Size(405, 23);
-            this.txtGPUType.TabIndex = 47;
+            this.lblManufacturer.AutoSize = true;
+            this.lblManufacturer.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManufacturer.Location = new System.Drawing.Point(6, 81);
+            this.lblManufacturer.Name = "lblManufacturer";
+            this.lblManufacturer.Size = new System.Drawing.Size(134, 22);
+            this.lblManufacturer.TabIndex = 23;
+            this.lblManufacturer.Text = "Manufacturer";
             // 
-            // txtWebCam
+            // lblModel
             // 
-            this.txtWebCam.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtWebCam.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWebCam.Location = new System.Drawing.Point(3, 304);
-            this.txtWebCam.Name = "txtWebCam";
-            this.txtWebCam.Size = new System.Drawing.Size(405, 23);
-            this.txtWebCam.TabIndex = 48;
+            this.lblModel.AutoSize = true;
+            this.lblModel.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModel.Location = new System.Drawing.Point(341, 79);
+            this.lblModel.Name = "lblModel";
+            this.lblModel.Size = new System.Drawing.Size(67, 22);
+            this.lblModel.TabIndex = 25;
+            this.lblModel.Text = "Model";
             // 
-            // txtOS
+            // txtManufacturer
             // 
-            this.txtOS.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOS.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOS.Location = new System.Drawing.Point(3, 341);
-            this.txtOS.Name = "txtOS";
-            this.txtOS.Size = new System.Drawing.Size(405, 23);
-            this.txtOS.TabIndex = 49;
+            this.txtManufacturer.BackColor = System.Drawing.Color.White;
+            this.txtManufacturer.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtManufacturer.Location = new System.Drawing.Point(146, 76);
+            this.txtManufacturer.Name = "txtManufacturer";
+            this.txtManufacturer.ReadOnly = true;
+            this.txtManufacturer.Size = new System.Drawing.Size(140, 30);
+            this.txtManufacturer.TabIndex = 24;
+            // 
+            // txtPlatform
+            // 
+            this.txtPlatform.BackColor = System.Drawing.Color.White;
+            this.txtPlatform.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPlatform.Location = new System.Drawing.Point(414, 41);
+            this.txtPlatform.Name = "txtPlatform";
+            this.txtPlatform.ReadOnly = true;
+            this.txtPlatform.Size = new System.Drawing.Size(141, 30);
+            this.txtPlatform.TabIndex = 22;
+            // 
+            // lblCondition
+            // 
+            this.lblCondition.AutoSize = true;
+            this.lblCondition.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCondition.Location = new System.Drawing.Point(37, 44);
+            this.lblCondition.Name = "lblCondition";
+            this.lblCondition.Size = new System.Drawing.Size(103, 22);
+            this.lblCondition.TabIndex = 19;
+            this.lblCondition.Text = "Condition";
+            // 
+            // lblPlatform
+            // 
+            this.lblPlatform.AutoSize = true;
+            this.lblPlatform.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlatform.Location = new System.Drawing.Point(319, 44);
+            this.lblPlatform.Name = "lblPlatform";
+            this.lblPlatform.Size = new System.Drawing.Size(89, 22);
+            this.lblPlatform.TabIndex = 21;
+            this.lblPlatform.Text = "Platform";
+            // 
+            // txtCondition
+            // 
+            this.txtCondition.BackColor = System.Drawing.Color.White;
+            this.txtCondition.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCondition.Location = new System.Drawing.Point(146, 41);
+            this.txtCondition.Name = "txtCondition";
+            this.txtCondition.ReadOnly = true;
+            this.txtCondition.Size = new System.Drawing.Size(140, 30);
+            this.txtCondition.TabIndex = 20;
             // 
             // pBoxComputer
             // 
@@ -488,6 +520,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "System Components";
             // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(20, 165);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(58, 22);
+            this.lblTotal.TabIndex = 28;
+            this.lblTotal.Text = "Total";
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.BackColor = System.Drawing.Color.White;
+            this.txtTotal.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.Location = new System.Drawing.Point(313, 162);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
+            this.txtTotal.Size = new System.Drawing.Size(140, 30);
+            this.txtTotal.TabIndex = 29;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Black;
@@ -508,9 +560,11 @@
             // 
             // txtSalesTax
             // 
+            this.txtSalesTax.BackColor = System.Drawing.Color.White;
             this.txtSalesTax.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalesTax.Location = new System.Drawing.Point(313, 78);
             this.txtSalesTax.Name = "txtSalesTax";
+            this.txtSalesTax.ReadOnly = true;
             this.txtSalesTax.Size = new System.Drawing.Size(140, 30);
             this.txtSalesTax.TabIndex = 24;
             // 
@@ -526,36 +580,53 @@
             // 
             // txtPrice
             // 
+            this.txtPrice.BackColor = System.Drawing.Color.White;
             this.txtPrice.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrice.Location = new System.Drawing.Point(313, 41);
             this.txtPrice.Name = "txtPrice";
+            this.txtPrice.ReadOnly = true;
             this.txtPrice.Size = new System.Drawing.Size(140, 30);
             this.txtPrice.TabIndex = 20;
             // 
-            // lblTotal
+            // btnFinish
             // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(20, 165);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(58, 22);
-            this.lblTotal.TabIndex = 28;
-            this.lblTotal.Text = "Total";
+            this.btnFinish.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinish.Location = new System.Drawing.Point(964, 529);
+            this.btnFinish.Name = "btnFinish";
+            this.btnFinish.Size = new System.Drawing.Size(132, 36);
+            this.btnFinish.TabIndex = 42;
+            this.btnFinish.Text = "Next";
+            this.btnFinish.UseVisualStyleBackColor = true;
             // 
-            // txtTotal
+            // btnCancel
             // 
-            this.txtTotal.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(313, 162);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(140, 30);
-            this.txtTotal.TabIndex = 29;
+            this.btnCancel.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(826, 529);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(132, 36);
+            this.btnCancel.TabIndex = 41;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(688, 529);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(132, 36);
+            this.btnBack.TabIndex = 43;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
             // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1119, 578);
+            this.ClientSize = new System.Drawing.Size(1106, 578);
             this.ControlBox = false;
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnFinish);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pBoxComputer);
             this.Controls.Add(this.gBoxSystemComponents);
@@ -628,5 +699,8 @@
         private System.Windows.Forms.TextBox txtSalesTax;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.Button btnFinish;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnBack;
     }
 }

@@ -30,5 +30,18 @@ namespace Assignment4
         {
             Application.Exit();
         }
+
+        // open product info form and the open file dialog 
+        private void btnOpenSaved_Click(object sender, EventArgs e)
+        {
+            SelectForm selectForm = new SelectForm();
+            ProductInfoForm productInfoForm = new ProductInfoForm();
+            productInfoForm.previousForm = selectForm;
+
+            this.Hide();
+            productInfoForm.Show();
+            productInfoForm.OpenFile(btnOpenSaved, e);
+                       
+        }
     }
 }

@@ -23,19 +23,27 @@ namespace Assignment4
             InitializeComponent();
         }
 
+        public void ClearForm()
+        {
+            btnNext.Enabled = false;
+            dataGridViewComputerList.ClearSelection();
+            txtSelection.Text = "";
+        }
+
         private void SelectForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'computerStoreDataSet.products' table. You can move, or remove it, as needed.
             this.productsTableAdapter.Fill(this.computerStoreDataSet.products);
             Program.productList = (from product in Program.db.products select product).ToList(); // store all products in th products table in a list
-
+            btnNext.Enabled = false;
+            dataGridViewComputerList.ClearSelection();
+            txtSelection.Text = "";
         }
 
-        // close and go back to previous form
+        // close the app
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
-            previousForm.Show();
+            Application.Exit();
         }
 
         // select a product
@@ -66,6 +74,15 @@ namespace Assignment4
             // hide this form and show next form
             this.Hide();
             productInfoForm.Show();
+        }
+
+        // enable next button
+        private void txtSelection_TextChanged(object sender, EventArgs e)
+        {
+            if(btnNext.Enabled == false)
+            {
+                btnNext.Enabled = true;
+            }
         }
     }
 }

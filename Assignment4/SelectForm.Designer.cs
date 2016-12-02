@@ -370,11 +370,14 @@
             // 
             // txtSelection
             // 
+            this.txtSelection.BackColor = System.Drawing.Color.White;
             this.txtSelection.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSelection.Location = new System.Drawing.Point(182, 541);
             this.txtSelection.Name = "txtSelection";
+            this.txtSelection.ReadOnly = true;
             this.txtSelection.Size = new System.Drawing.Size(582, 30);
             this.txtSelection.TabIndex = 3;
+            this.txtSelection.TextChanged += new System.EventHandler(this.txtSelection_TextChanged);
             // 
             // btnCancel
             // 

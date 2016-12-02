@@ -12,9 +12,12 @@ namespace Assignment4
 {
     public partial class OrderForm : Form
     {
+        public ProductInfoForm previousForm; 
+
         public OrderForm()
         {
             InitializeComponent();
         }
+
     }
 }
