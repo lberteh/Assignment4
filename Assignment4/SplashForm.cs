@@ -10,18 +10,20 @@ using System.Windows.Forms;
 
 namespace Assignment4
 {
-    public partial class ProductInfoForm : Form
+    public partial class SplashForm : Form
     {
-        public SelectForm previousForm;
-
-        public ProductInfoForm()
+        public SplashForm()
         {
             InitializeComponent();
         }
 
-        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        // go to next form
+        private void timerSplash_Tick(object sender, EventArgs e)
         {
+            StartForm startForm = new StartForm();
 
+            this.Hide();
+            startForm.Show();        
         }
     }
 }

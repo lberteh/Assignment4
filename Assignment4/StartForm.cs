@@ -16,5 +16,19 @@ namespace Assignment4
         {
             InitializeComponent();
         }
+
+        private void btnNewOrder_Click(object sender, EventArgs e)
+        {
+            SelectForm selectForm = new SelectForm();
+            selectForm.previousForm = this;
+
+            this.Hide();
+            selectForm.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
