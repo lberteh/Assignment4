@@ -185,7 +185,7 @@
             this.txtCondition.Location = new System.Drawing.Point(500, 58);
             this.txtCondition.Name = "txtCondition";
             this.txtCondition.ReadOnly = true;
-            this.txtCondition.Size = new System.Drawing.Size(100, 30);
+            this.txtCondition.Size = new System.Drawing.Size(118, 30);
             this.txtCondition.TabIndex = 5;
             // 
             // lblCondition
@@ -202,17 +202,17 @@
             // 
             this.txtCost.BackColor = System.Drawing.Color.White;
             this.txtCost.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCost.Location = new System.Drawing.Point(744, 58);
+            this.txtCost.Location = new System.Drawing.Point(764, 58);
             this.txtCost.Name = "txtCost";
             this.txtCost.ReadOnly = true;
-            this.txtCost.Size = new System.Drawing.Size(100, 30);
+            this.txtCost.Size = new System.Drawing.Size(126, 30);
             this.txtCost.TabIndex = 7;
             // 
             // lblCost
             // 
             this.lblCost.AutoSize = true;
             this.lblCost.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCost.Location = new System.Drawing.Point(685, 61);
+            this.lblCost.Location = new System.Drawing.Point(705, 61);
             this.lblCost.Name = "lblCost";
             this.lblCost.Size = new System.Drawing.Size(53, 22);
             this.lblCost.TabIndex = 6;

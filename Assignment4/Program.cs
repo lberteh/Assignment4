@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * App: Assignment 4 - Dollar Computer 
+ * Author: Lucas Berté Schoenardie
+ * Student #: 200322197
+ * App Creation Date: 12/02/2016
+ * App Description: Computer store (select and purchase a computer/laptop)
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -24,7 +32,7 @@ namespace Assignment4
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartForm());
+            Application.Run(new SplashForm());
 
             
         }

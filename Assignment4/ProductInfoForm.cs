@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * App: Assignment 4 - Dollar Computer 
+ * Author: Lucas Berté Schoenardie
+ * Student #: 200322197
+ * App Creation Date: 12/02/2016
+ * App Description: Computer store (select and purchase a computer/laptop)
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +23,7 @@ namespace Assignment4
 {
     public partial class ProductInfoForm : Form
     {
+        // class variables
         public SelectForm previousForm;
         
         SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -34,12 +43,12 @@ namespace Assignment4
             }        
         }
 
+        // populate textboxes with data from product object
         private void populateTextBoxes()
         {
             txtProdID.Text = Program.product.productID.ToString();
-            txtCondition.Text = Program.product.condition;
-            // currency formater not working with to string 
-            txtCost.Text = "$" + Program.product.cost.ToString().Remove(Program.product.cost.ToString().Length-2);
+            txtCondition.Text = Program.product.condition;          
+            txtCost.Text = ((decimal)Program.product.cost).ToString("C2");
             txtPlatform.Text = Program.product.platform;
             txtManufacturer.Text = Program.product.manufacturer;
             txtOS.Text = Program.product.OS;
@@ -78,6 +87,8 @@ namespace Assignment4
                 
             }
         }
+
+        // save to xml
         private void SaveSelection(object IClass, string filename)
         {
             StreamWriter writer = null;
@@ -95,6 +106,7 @@ namespace Assignment4
             }
         }
 
+        // open file
         public void OpenFile(object sender, EventArgs e)
         {
             openFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
@@ -117,6 +129,7 @@ namespace Assignment4
             }
         }
 
+        // load xml file
         private T LoadSelection<T>(string filePath) where T : new()
         {
             TextReader reader = null;
@@ -133,11 +146,17 @@ namespace Assignment4
             }
         }
 
+        // end app
         private void ExitApp(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result = MessageBox.Show("Are you sure? Application will terminate!", "Exit", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
+        // back to previous form
         private void ReturnToSelectForm(object sender, EventArgs e)
         {
             Program.product = null;       
@@ -146,10 +165,13 @@ namespace Assignment4
             previousForm.Show();
         }
 
+        // go to the next form
         private void btnNext_Click(object sender, EventArgs e)
         {
+            OrderForm orderForm = new OrderForm();
+            orderForm.previousForm = this;
             this.Hide();
-            new OrderForm().Show();
+            orderForm.Show();
         }
     }
 }

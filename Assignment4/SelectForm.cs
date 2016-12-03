@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * App: Assignment 4 - Dollar Computer 
+ * Author: Lucas Berté Schoenardie
+ * Student #: 200322197
+ * App Creation Date: 12/02/2016
+ * App Description: Computer store (select and purchase a computer/laptop)
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +31,7 @@ namespace Assignment4
             InitializeComponent();
         }
 
+        // clear form inputs
         public void ClearForm()
         {
             btnNext.Enabled = false;
@@ -43,7 +52,11 @@ namespace Assignment4
         // close the app
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result = MessageBox.Show("Are you sure? Application will terminate!", "Exit", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         // select a product

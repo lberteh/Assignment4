@@ -105,7 +105,7 @@ namespace Assignment4.Models
         {
             string productString = "";
 
-            productString += manufacturer + " " + model + "Priced at: $" + cost.ToString().Remove(cost.ToString().Length-2);
+            productString += manufacturer + " " + model + "Priced at: " + ((decimal)Program.product.cost).ToString("C2");
 
             return productString;
         }

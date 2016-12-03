@@ -67,7 +67,6 @@
             this.lblCondition = new System.Windows.Forms.Label();
             this.lblPlatform = new System.Windows.Forms.Label();
             this.txtCondition = new System.Windows.Forms.TextBox();
-            this.pBoxComputer = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
@@ -79,11 +78,12 @@
             this.btnFinish = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.pBoxComputer = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.gBoxSystemComponents.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxComputer)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxComputer)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -112,12 +112,14 @@
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.printToolStripMenuItem.Text = "&Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -130,8 +132,9 @@
             // backToolStripMenuItem
             // 
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.backToolStripMenuItem.Text = "&Back";
+            this.backToolStripMenuItem.Click += new System.EventHandler(this.Back);
             // 
             // helpToolStripMenuItem
             // 
@@ -144,8 +147,9 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // gBoxSystemComponents
             // 
@@ -494,14 +498,6 @@
             this.txtCondition.Size = new System.Drawing.Size(140, 30);
             this.txtCondition.TabIndex = 20;
             // 
-            // pBoxComputer
-            // 
-            this.pBoxComputer.Location = new System.Drawing.Point(620, 52);
-            this.pBoxComputer.Name = "pBoxComputer";
-            this.pBoxComputer.Size = new System.Drawing.Size(204, 196);
-            this.pBoxComputer.TabIndex = 2;
-            this.pBoxComputer.TabStop = false;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lblTotal);
@@ -595,8 +591,9 @@
             this.btnFinish.Name = "btnFinish";
             this.btnFinish.Size = new System.Drawing.Size(132, 36);
             this.btnFinish.TabIndex = 42;
-            this.btnFinish.Text = "Next";
+            this.btnFinish.Text = "Finish";
             this.btnFinish.UseVisualStyleBackColor = true;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // btnCancel
             // 
@@ -607,6 +604,7 @@
             this.btnCancel.TabIndex = 41;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnBack
             // 
@@ -617,6 +615,16 @@
             this.btnBack.TabIndex = 43;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.Back);
+            // 
+            // pBoxComputer
+            // 
+            this.pBoxComputer.Location = new System.Drawing.Point(620, 52);
+            this.pBoxComputer.Name = "pBoxComputer";
+            this.pBoxComputer.Size = new System.Drawing.Size(204, 196);
+            this.pBoxComputer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxComputer.TabIndex = 2;
+            this.pBoxComputer.TabStop = false;
             // 
             // OrderForm
             // 
@@ -635,15 +643,16 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "OrderForm";
             this.Text = "Complete Your Order";
+            this.Load += new System.EventHandler(this.OrderForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.gBoxSystemComponents.ResumeLayout(false);
             this.gBoxSystemComponents.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxComputer)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxComputer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

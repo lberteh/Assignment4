@@ -128,6 +128,7 @@
             this.dataGridViewComputerList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewComputerList.Size = new System.Drawing.Size(1011, 477);
             this.dataGridViewComputerList.TabIndex = 1;
+            this.dataGridViewComputerList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RowClicked);
             this.dataGridViewComputerList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RowClicked);
             this.dataGridViewComputerList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RowClicked);
             // 
